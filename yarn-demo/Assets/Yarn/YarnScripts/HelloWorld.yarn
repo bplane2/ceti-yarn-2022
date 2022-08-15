@@ -1,0 +1,28 @@
+﻿title: Start
+position: -7,-59
+---
+<<set $hello_count to 1>>
+<<set $go_to_end to false>>
+<<jump Entry>>
+===
+title: Entry
+position: -7,-159
+---
+Computer: Hello world!
+Everyone: Hello computer!
+-> Continue saying hello.
+    <<set $hello_count to $hello_count + 1>>
+    <<jump Entry>>
+-> Go to the end
+    <<set $go_to_end to true>>
+<<if $go_to_end>>
+    Computer: Time for the end.
+    <<jump End>>
+<<endif>>
+===
+title: End
+position: 81,84
+---
+Computer: You said hello {$hello_count} times! Goodbye.
+
+===
