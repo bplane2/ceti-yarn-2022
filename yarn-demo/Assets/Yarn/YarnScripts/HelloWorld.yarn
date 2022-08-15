@@ -13,6 +13,8 @@ Everyone: Hello computer!
 -> Continue saying hello.
     <<set $hello_count to $hello_count + 1>>
     <<jump Entry>>
+-> I'm tired of saying hello. <<if $hello_count > 5>>
+    <<set $go_to_end to true>>
 -> Go to the end
     <<set $go_to_end to true>>
 <<if $go_to_end>>
