@@ -53,7 +53,7 @@ Ghost: Are you ready to tell me what happened?
 Ghost: Well there's no point talkin' to me. Go chat with the my crazy crew some more!
 ===
 title: LeftGraveLouise
-position: -97,-744
+position: -106,-482
 ---
 <<if not $spokenToLeftGrave>>
     Louise: Are you here to get me out of here?
@@ -143,11 +143,13 @@ position: -97,-744
 <<jump LeftGraveLouiseBye>>
 ===
 title: LeftGraveLouiseBye
+position: -439,-649
 ---
 Louise: I'm tired of chatting for now.
 Louise: Bye!
 ===
 title: CenterGraveCarol
+position: -443,-465
 ---
 <<if not $spokenToCenterGrave>>
     Carol: Yes?
@@ -215,12 +217,14 @@ title: CenterGraveCarol
 <<jump CenterGraveCarolBye>>
 ===
 title: CenterGraveCarolBye
+position: -81,-317
 ---
 Carol: Anyway, toodles!
 Carol: Time for my beauty sleep.
 -> But you're... oh nevermind. Sleep well.
 ===
 title: RightGraveRuby
+position: -435,-250
 ---
 <<if not $spokenToRightGrave>>
     Ruby: What's shaking? Any pirate booty?
@@ -292,11 +296,13 @@ title: RightGraveRuby
 <<jump RightGraveRubyBye>>
 ===
 title: RightGraveRubyBye
+position: -76,-139
 ---
 Ruby: Off you go.
 Ruby: Go be weird somewhere else.
 ===
 title: Ending
+position: 196,205
 ---
 Ghost: Yarr, where's the treasure matey?
 Ghost: I'll share it with yeh!
